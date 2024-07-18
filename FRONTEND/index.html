@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ITECH CLUB REGISTRATIONS</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/FRONTEND/styles.css">
+</head>
+<body>
+    <header>
+        <h1>ZETECH UNIVERSITY CLUBS FORM</h1>
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="title">Registrations</div>
+        <form action="SubmitFormServlet" method="POST">
+            <div class="user-details">
+                <div class="input-box">
+                    <span class="details">Full Name</span>
+                    <input type="text" name="full_name" placeholder="Enter your name" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Email</span>
+                    <input type="email" name="email" placeholder="Enter your Email" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">User Name</span>
+                    <input type="text" name="username" placeholder="Enter your User name" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Registration Number</span>
+                    <input type="text" name="reg_number" placeholder="Enter your Reg No" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Which Campus</span>
+                    <input type="text" name="campus" placeholder="Enter your Campus" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Phone Number</span>
+                    <input type="tel" name="phone" placeholder="Enter your Phone no" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Club Name</span>
+                    <input type="text" name="club_name" placeholder="Enter your Club name" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Role</span>
+                    <input type="text" name="role" placeholder="Enter your Role" required>
+                </div>
+                <div class="gender-details">
+                    <span class="gender-title">Gender</span>
+                    <div class="category">
+                        <label>
+                            <input type="radio" name="gender" value="Male" required>
+                            <span class="gender">Male</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="gender" value="Female" required>
+                            <span class="gender">Female</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="gender" value="Prefer not to say" required>
+                            <span class="gender">Prefer not to say</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="button">
+                    <input type="submit" value="Register">
+                </div>
+            </div>
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2024 CLUB MEMBERSHIPS</p>
+    </footer>
+</body>
+</html>
